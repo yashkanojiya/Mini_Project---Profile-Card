@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card | Yash Kanojiya</title>
+    <link rel="shortcut icon" href="Y.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="ProfileCard.css" />
+</head>
+<body>
+   <div class="circle1"></div>
+   <div class="circle2"></div>
+
+   <section id="wrapper">
+        <section class="Profile-wrapper">
+
+            <!-- profile image -->
+            <div>
+                <img src="IMG.png" alt="">
+            </div>
+            
+            <div class="user-name">
+                <h2>Yash Kanojiya</h2>
+            </div>
+
+            <div class="designation">
+                <h3>Student , DTU</h3>
+            </div>
+                <!-- share my profile section  -->
+            <div class="share-my-profile">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share" ></i>
+                    <div>Share My Profile</div>
+                </button>
+                <!-- follow me button  -->
+                <button class="btn-follow btn-card">Follow me</button>
+            </div>
+        </section>
+   </section>
+
+    <!-- Hidden card section  -->
+   <section class="hidden-card">
+        <div class="header">
+            <h1>Share My Profile</h1>
+            <div> <i onclick="closeModal()" class="fa-solid fa-xmark close"></i></div>
+        </div>
+
+        <div class="">
+            <h3>share this via</h3>
+            <!-- social media handels  -->
+            <div class="icon-container">
+                <a href="https://www.facebook.com/profile.php?id=100008088257441" class="icon" target="_blank" id="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/yashkanojiya" class="icon" target="_blank" id="github">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/yash.kanojiya07/" class="icon" target="_blank" id="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="icon" target="_blank" id="whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yash-kanojiya-bb8451263/" class="icon" target="_blank" id="linkedin">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+        </div>
+   </section>
+   <!--By clicking anywhere on screen i can close the modal -->
+   <section class="overlay" onclick="closeModal()"></section>
+   
+   <script src="ProfileCard.js"></script>
+</body>
+</html>
